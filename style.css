@@ -1,0 +1,9 @@
+.main-container {
+  display: flex;
+  background: rgb(41, 41, 41);
+  flex-direction: column;
+}
+
+.main-container-header {
+  color: aliceblue;
+}
