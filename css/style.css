@@ -1,0 +1,11 @@
+body {
+  background: rgb(41, 41, 41);
+}
+
+.container {
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
