@@ -19,7 +19,7 @@ Este repositório contém os arquivos do 'Weather App', feito com Vanilla Javasc
 - Event Handlers;
 - Valores truthy e falsy;
 - Desestruturação de objetos e arrays;
-- Como acessar os atributos data de um elemento HTML, por meio da propriedade dataset;
+- Como acessar os atributos data de um elemento HTML, por meio de 'data attributes';
 
 ### 🔗 Link
 
