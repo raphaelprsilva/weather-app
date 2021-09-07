@@ -3,6 +3,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <title>Weather Application</title>
 </head>
@@ -21,18 +24,19 @@
       <div data-js="time-icon" class="bg-light mx-auto text-center"></div>
 
       <div data-js="weather-details" class="text-muted text-uppercase text-center">
-        <h5 class="my-3">Nome da Cidade</h5>
+        <h5 class="my-3" data-js="city-name">Nome da Cidade</h5>
 
-        <div class="my-3">Clima</div>
+        <div class="my-3" data-js="weather-text">Clima</div>
 
         <div class="display-4 my-4">
-          <span>00</span>
+          <span data-js="weather-value">00</span>
           <span>&deg;C</span>
         </div>
       </div>
     </div>
   </div>
 
+  <script src="./js/weather.js"></script>
   <script src="./js/app.js"></script>
 </body>
 </html>
