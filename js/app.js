@@ -10,13 +10,11 @@ weatherForm.addEventListener('submit', async (event) => {
 
   const cityInput = event.target.city.value;
 
-  const cityWeatherInfos = await fetchData(cityInput);
-  const { Key, LocalizedName } = cityWeatherInfos;
+  const cityWeatherInfos = await fetchData(getCityUrl(cityInput));
+  const [{ Key, LocalizedName }] = cityWeatherInfos;
 
-  const weatherData = await fetchWeatherInfos(Key);
+  const weatherData = await fetchData(getCityWeatherUrl(Key));
   const [{ IsDayTime, Temperature, WeatherIcon, WeatherText }] = weatherData;
-
-  const weatherIconImage = document.createElement('img');
 
   cityName.innerHTML = LocalizedName;
   weatherText.innerHTML = WeatherText;
@@ -24,7 +22,7 @@ weatherForm.addEventListener('submit', async (event) => {
 
   IsDayTime ? weatherImage.src = './src/day.svg' : weatherImage.src = './src/night.svg';
 
-  weatherIconImage.src = `./src/icons/${WeatherIcon}.svg`;
+  weatherIcon.innerHTML = `<img src="./src/icons/${WeatherIcon}.svg" />`;
   weatherIcon.insertAdjacentElement('beforeend', weatherIconImage);
 
   console.log(weatherData);
