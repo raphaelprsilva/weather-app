@@ -23,7 +23,7 @@ Este repositório contém os arquivos do 'Weather App', feito com Vanilla Javasc
 
 ### 🔗 Link
 
-[Weather App](https://www.elraphael.com.br/weather-app/)
+[Weather App](https://weather-app.elraphael.com.br/)
 
 ---
 
